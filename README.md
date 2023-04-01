@@ -1,5 +1,5 @@
 
-# Beats-to-relax
+# Tiktok clone
 
 Segue a aplicação que está sendo desenvolvida com conhecimentos adquiridos na maratona full-stack da EBAC.
 
