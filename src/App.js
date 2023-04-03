@@ -7,6 +7,12 @@ import { collection, getDocs } from "firebase/firestore/lite";
 
 function App() {
 
+  let maxHeight;
+
+  if(window.innerHeight <= 800) {
+    maxHeight = window.innerHeight
+  }
+
   const [video, setVideos] = useState([])
 
   async function getVideos() {
@@ -22,7 +28,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="App" style={{ maxHeight: maxHeight + "px"}}>
       <div className='app__videos'>
 
         {
@@ -47,3 +53,7 @@ function App() {
 }
 
 export default App;
+
+// Login firebase: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass 
+
+// apos criar build npm run build
